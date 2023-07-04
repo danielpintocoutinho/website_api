@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+
+class Category(models.Model):
+    label = models.CharField(primary_key=True, max_length=200)
+
+class Links(models.Model):
+    link = models.CharField(primary_key=True, max_length=200)
